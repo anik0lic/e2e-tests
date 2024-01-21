@@ -5,7 +5,7 @@ test('buying items test', async ({ page }) => {
 
   await page.getByRole('link', { name: 'Sign In' }).click();
 
-  await page.getByLabel('Email', { exact: true }).fill('andjela1234@gmail.com');
+  await page.getByLabel('Email', { exact: true }).fill('andjela1@gmail.com');
   await page.getByLabel('Password').fill('Andjela1234');
 
   await page.getByRole('button', { name: 'Sign In' }).click();
